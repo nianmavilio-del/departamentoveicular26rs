@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rios & Mares Fishing Store</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Montserrat',sans-serif;
+    }
+
+    body{
+      background:#f3f5f7;
+      color:#111;
+    }
+
+    header{
+      width:100%;
+      background:#081018;
+      padding:18px 7%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:999;
+      border-bottom:2px solid #0f7cff;
+    }
+
+    .logo{
+      color:#0f7cff;
+      font-size:30px;
+      font-weight:800;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      font-weight:500;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      color:#0f7cff;
+    }
+
+    .hero{
+      min-height:92vh;
+      background:
+      linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
+      url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      padding:0 7%;
+      color:white;
+    }
+
+    .hero-content{
+      max-width:650px;
+    }
+
+    .hero h1{
+      font-size:64px;
+      line-height:1.1;
+      margin-bottom:20px;
+      font-weight:800;
+    }
+
+    .hero p{
+      font-size:20px;
+      line-height:1.7;
+      margin-bottom:35px;
+      color:#ddd;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#0f7cff;
+      color:white;
+      padding:16px 35px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:700;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      background:#005fe0;
+      transform:translateY(-3px);
+    }
+
+    .section{
+      padding:85px 7%;
+    }
+
+    .title{
+      text-align:center;
+      font-size:44px;
+      margin-bottom:50px;
+      font-weight:800;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 12px 30px rgba(0,0,0,.08);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-7px);
+    }
+
+    .card img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card h3{
+      font-size:22px;
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:#0f7cff;
+      font-size:30px;
+      font-weight:800;
+      margin:18px 0;
+    }
+
+    .benefits{
+      background:#081018;
+      color:white;
+    }
+
+    .benefit-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      gap:25px;
+    }
+
+    .benefit{
+      background:#121c26;
+      padding:30px;
+      border-radius:15px;
+      border:1px solid rgba(255,255,255,.05);
+    }
+
+    .benefit h4{
+      color:#0f7cff;
+      margin-bottom:15px;
+      font-size:24px;
+    }
+
+    footer{
+      background:#05090d;
+      color:#bbb;
+      padding:60px 7%;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:35px;
+      margin-bottom:35px;
+    }
+
+    footer h4{
+      color:white;
+      margin-bottom:15px;
+    }
+
+    footer p,
+    footer a{
+      color:#bbb;
+      text-decoration:none;
+      line-height:2;
+    }
+
+    .copyright{
+      border-top:1px solid rgba(255,255,255,.08);
+      padding-top:25px;
+      text-align:center;
+      font-size:14px;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:42px;
+      }
+
+      nav{
+        display:none;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+
+  <div class="logo">
+    RIOS & MARES
+  </div>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Promoções</a>
+    <a href="#">Contato</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>
+      A Loja De Pesca Pra Quem Vive Água e Adrenalina
+    </h1>
+
+    <p>
+      Equipamentos premium para rios, lagos e pesca oceânica.
+      Carretilhas, molinetes, iscas artificiais e acessórios profissionais.
+    </p>
+
+    <a href="#" class="btn">
+      VER COLEÇÃO
+    </a>
+
+  </div>
+
+</section>
+
+<section class="section">
+
+  <h2 class="title">
+    Produtos em Destaque
+  </h2>
+
+  <div class="products">
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="card-content">
+
+        <h3>Isca Artificial Ocean Strike</h3>
+
+        <p>
+          Ataque agressivo para grandes predadores.
+        </p>
+
+        <div class="price">
+          R$ 69,90
+        </div>
+
+        <a href="#" class="btn">
+          Comprar
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1605371924599-2d0365da1ae0?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="card-content">
+
+        <h3>Carretilha Blue Sea X</h3>
+
+        <p>
+          Precisão e força pra pesca pesada.
+        </p>
+
+        <div class="price">
+          R$ 429,90
+        </div>
+
+        <a href="#" class="btn">
+          Comprar
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <img src="https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=1200&auto=format&fit=crop">
+
+      <div class="card-content">
+
+        <h3>Camisa UV Fishing Pro</h3>
+
+        <p>
+          Proteção UV e conforto extremo.
+        </p>
+
+        <div class="price">
+          R$ 119,90
+        </div>
+
+        <a href="#" class="btn">
+          Comprar
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section benefits">
+
+  <h2 class="title">
+    Por Que Escolher Nossa Loja?
+  </h2>
+
+  <div class="benefit-grid">
+
+    <div class="benefit">
+
+      <h4>Frete Ágil</h4>
+
+      <p>
+        Envio rápido pra todo Brasil sem enrolação.
+      </p>
+
+    </div>
+
+    <div class="benefit">
+
+      <h4>Equipamentos Premium</h4>
+
+      <p>
+        Produtos selecionados pra pescadores exigentes.
+      </p>
+
+    </div>
+
+    <div class="benefit">
+
+      <h4>Pagamento Seguro</h4>
+
+      <p>
+        Checkout protegido com Pix e cartão.
+      </p>
+
+    </div>
+
+    <div class="benefit">
+
+      <h4>Suporte Especializado</h4>
+
+      <p>
+        Atendimento de quem realmente entende de pesca.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h4>Contato</h4>
+
+      <p>WhatsApp: (11) 99999-9999</p>
+      <p>Email: contato@riosemarespesca.com.br</p>
+      <p>São Paulo - SP</p>
+
+    </div>
+
+    <div>
+
+      <h4>Institucional</h4>
+
+      <p><a href="#">Política de Privacidade</a></p>
+      <p><a href="#">Trocas e Devoluções</a></p>
+      <p><a href="#">Termos de Uso</a></p>
+
+    </div>
+
+    <div>
+
+      <h4>Horário</h4>
+
+      <p>Segunda à Sexta</p>
+      <p>09h às 18h</p>
+
+    </div>
+
+  </div>
+
+  <div class="copyright">
+
+    © 2026 Rios & Mares Fishing Store — Todos os direitos reservados.<br>
+    CNPJ: 45.444.485/0001-40
+
+  </div>
+
+</footer>
+
+</body>
+</html>
